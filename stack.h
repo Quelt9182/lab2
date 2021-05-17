@@ -11,10 +11,11 @@ public:
 
 	Stack(int StartSize);
 	Stack(const Stack& last);
+	Stack& operator= (const Stack& prev);
 	void push(int elem);
 	int pop();
-	void multiPop(int N);
 	bool isEmpty();
+	void multiPop(int N);
 	void show();
 	~Stack();
 };

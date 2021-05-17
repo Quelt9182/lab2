@@ -1,5 +1,4 @@
 #include <iostream> // cmd
-#include <cstdlib>
 #include "stack.h" // файл з класом
 
 using namespace std;
@@ -19,7 +18,7 @@ Stack:: Stack(const Stack& last){
 	show();
 }
 //Оператор присвоювання
-Stack& Stack:: operator = (const Stack& prev){
+Stack& Stack:: operator= (const Stack& prev){
 	stSize = prev.stSize + 2;
 	pStack = new int[stSize];
 	for(int i = 0; i < stSize; ++i){
